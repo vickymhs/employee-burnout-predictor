@@ -32,3 +32,7 @@ Contributions are what make the open source community such an amazing place to b
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+## Acknowledgements
+* [Data Preprocessing Reference](https://www.kaggle.com/gulmert89/a-regression-adventure-up-to-92-98)
+* [ReadMe Themes](https://github.com/othneildrew/Best-README-Template)
