@@ -21,4 +21,4 @@ This project aims at predicting the burnout of an employee through Deep Learning
 
 # Visualize
 
-![alt text] (https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/vickymhs/employee-burnout-predictor/Burnout/Page layout.png?raw=true)
