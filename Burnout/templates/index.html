@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+        <link href='https://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+      <div class="row">
+    <div class="col-md-12">
+
+      <form action="http://localhost:5000/predict" method="POST" class="custom_form" id="custom_form">
+        <h1> Employee Burnout Predictor </h1>
+        
+        <h2> Is there still a LIFE for me to RETURN to?</h2>
+        <fieldset>
+        
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+
+          <p> Select your Gender </p>
+          
+          <label class="radio-inline">
+            <input type="radio" id="male" name="gender" value="1">Male
+          </label>
+          
+          <label>
+            <input type="radio" id="female" name="gender" value="0">Female
+          </label>
+
+          <p> Select if you have a WFH Setup </p>
+          
+          <label class="radio-inline">
+            <input type="radio" id="yes" name="wfh_setup" value="1">Yes
+          </label>
+          
+          <label>
+            <input type="radio" id="no" name="wfh_setup" value="0">No
+          </label>
+
+          <p> Select your company type </p>
+          
+          <label class="radio-inline">
+            <input type="radio" id="service" name="company_type" value="1">Service
+          </label>
+          
+          <label>
+            <input type="radio" id="product" name="company_type" value="0">Product
+          </label>
+
+          <p> Select your Designation (From L0 being least to L5 being highest) </p>
+          <select name="designation" id="designation">
+          <option value=0>L0</option>
+          <option value=1>L1</option>
+          <option value=2>L2</option>
+          <option value=3>L3</option>
+          <option value=4>L4</option>
+          <option value=5>L5</option>
+          </select>
+
+          <p>Select your work hours </p>
+          <input type = "range" min="0" max="10" name = "resource_allocation" onchange="workHoursRange.value=value"/>
+          <output id="workHoursRange">5</output>
+
+          <p>How often you feel mentally fatigued (0 - being lowest to 10 - being highest) </p>
+          <input type = "range" min="0" max="10" name = "mental_fatigue_score" onchange="fatigueRange.value=value"/>
+          <output id="fatigueRange">5</output>
+          
+        </fieldset>
+       
+        <button type="submit">Predict</button>
+
+        <h2> {{ result }} </h2>
+        
+       </form>
+        </div>
+      </div>
+      
+    </body>
+</html>
