@@ -1,6 +1,8 @@
 # employee-burnout-predictor
 Deep Learning based Web Application to predict the burnout of an employee.
 
+![visitors](https://visitor-badge.glitch.me/badge?page_id=vickymhs.employee-burnout-predictor)
+
 ## Motivation
 This project aims at predicting the burnout of an employee through Deep Learning. A simple web application was created using Flask and HTML to provide an interactive experience to the users. 
 
